@@ -7,14 +7,13 @@
 
 /**
 * struct convert - defines a structure for symbols and functions
-*
-* @op: The operator
+** @op: The operator
 * 
 * @f: The function associated
 */
 struct convert
 {
-	char *sym;
+	char *op;
 	int (*f)(va_list);
 };
 typedef struct convert conv;
