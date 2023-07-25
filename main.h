@@ -14,7 +14,7 @@
 */
 struct convert
 {
-	char *op;
+	char *sym;
 	int (*f)(va_list);
 };
 typedef struct convert conv;
