@@ -15,7 +15,7 @@
  * Return: A total count of the characters printed.
  */
 
-int parser(const char *format, conver_t f_list[], va_list arg_list)
+int parser(const char *format, conv f_list[], va_list arg_list)
 {
 	int i, j, r_val, printed_chars;
 

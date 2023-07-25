@@ -103,7 +103,7 @@ int display_hex(va_list list)
 	if (num < 1)
 		return (-1);
 	length = base_len(num, 16);
-	hex_rep = malloc(sizeof(char) * len + 1);
+	hex_rep = malloc(sizeof(char) * length + 1);
 	if (hex_rep == NULL)
 		return (-1);
 	for (length = 0; num > 0; length++)
