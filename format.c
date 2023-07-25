@@ -6,7 +6,7 @@
  */
 int print_char(va_list lists)
 {
-	_write_char(va_arg(lists, int));
+	_putchar(va_arg(lists, int));
 	return (1);
 }
 
@@ -24,7 +24,7 @@ int print_string(va_list lists)
 	if (str == NULL)
 		str = "(null)";
 	for (j = 0; str[j] != '\0'; j++)
-		_write_char(str[j]);
+		_putchar(str[j]);
 	return (j);
 }
 
@@ -35,7 +35,7 @@ int print_string(va_list lists)
  */
 int print_percent(__attribute__((unused))va_list lists)
 {
-	_write_char('%');
+	_putchar('%');
 	return (1);
 }
 
