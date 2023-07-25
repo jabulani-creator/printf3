@@ -33,7 +33,7 @@ int display_string(va_list lists)
  * @lists: a list of arguments
  * Return: This Will return the amount of characters printed.
  */
-int display_percent(__attribute__((unused))va_list lists)
+int display_percent(__attribute__((unused))va_list list)
 {
 	_putchar('%');
 	return (1);
