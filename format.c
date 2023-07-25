@@ -4,9 +4,9 @@
  * @lists: This is a list of arguments
  * Return: It Will return the amount of characters printed.
  */
-int display_char(va_list lists)
+int display_char(va_list list)
 {
-	_putchar(va_arg(lists, int));
+	_putchar(va_arg(list, int));
 	return (1);
 }
 
@@ -15,12 +15,12 @@ int display_char(va_list lists)
  * @lists: a list of arguments
  * Return: This Will return the amount of characters printed.
  */
-int display_string(va_list lists)
+int display_string(va_list list)
 {
 	int j;
 	char *str;
 
-	str = va_arg(lists, char *);
+	str = va_arg(list, char *);
 	if (str == NULL)
 		str = "(null)";
 	for (j = 0; str[j] != '\0'; j++)
@@ -44,11 +44,11 @@ int display_percent(__attribute__((unused))va_list list)
  * @lists: list of arguments
  * Return: Will return the amount of characters printed.
  */
-int display_integer(va_list lists)
+int display_integer(va_list list)
 {
 	int length;
 
-	length = display_number(lists);
+	length = display_number(list);
 	return (length);
 }
 
@@ -57,11 +57,11 @@ int display_integer(va_list lists)
  * @lists: a List of all of the argumets
  * Return: a count of the numbers
  */
-int unsigned_integer(va_list lists)
+int unsigned_integer(va_list list)
 {
 	unsigned int number;
 
-	number = va_arg(lists, unsigned int);
+	number = va_arg(list, unsigned int);
 
 	if (number == 0)
 		return (display_unsgined_number(number));
