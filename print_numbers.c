@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - Main Entry.
+ * display_numbers - Main Entry.
  *
  * Description: prints a number send to this function
  *
@@ -10,7 +10,7 @@
  * Return: The number of arguments printed
  */
 
-int print_numbers(va_list args)
+int display_numbers(va_list args)
 {
 	int n;
 	int div;
@@ -34,7 +34,7 @@ int print_numbers(va_list args)
 
 	for (; div != 0; )
 	{
-		len += _write_char(48 + num / div);
+		len += _putchar(48 + num / div);
 		num %= div;
 		div /= 10;
 	}
@@ -43,7 +43,7 @@ int print_numbers(va_list args)
 }
 
 /**
- * print_unsgined_number - Entry Point.
+ * display_unsgined_number - Entry Point.
  *
  * Description: Prints an unsigned number
  *
@@ -52,7 +52,7 @@ int print_numbers(va_list args)
  * Return: The amount of numbers printed
  */
 
-int print_unsgined_number(unsigned int n)
+int display_unsgined_number(unsigned int n)
 {
 	int div;
 	int len;
@@ -68,7 +68,7 @@ int print_unsgined_number(unsigned int n)
 
 	for (; div != 0; )
 	{
-		len += _write_char(48 + num / div);
+		len += _putchar(48 + num / div);
 		num %= div;
 		div /= 10;
 	}

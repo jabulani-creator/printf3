@@ -22,25 +22,25 @@ typedef struct convert conv;
 
 int parser(const char *format, conver_t f_list[], va_list arg_list);
 int _printf(const char *format, ...);
-int _write_char(char);
-int print_char(va_list);
-int print_string(va_list);
-int print_percent(va_list);
-int print_integer(va_list);
-int print_number(va_list);
-int print_binary(va_list);
-int print_reversed(va_list arg);
+int _putchar(char);
+int display_char(va_list);
+int display_string(va_list);
+int display_percent(va_list);
+int display_integer(va_list);
+int display_number(va_list);
+int display_binary(va_list);
+int display_rev(va_list arg);
 int rot13(va_list);
 int unsigned_integer(va_list);
-int print_octal(va_list list);
-int print_hex(va_list list);
-int print_heX(va_list list);
+int display_octal(va_list list);
+int display_hex(va_list list);
+int display_heX(va_list list);
 
 unsigned int base_len(unsigned int, int);
 char *rev_string(char *);
 void write_base(char *str);
 char *_memcpy(char *dest, char *src, unsigned int n);
-int print_unsgined_number(unsigned int);
+int display_unsgined_number(unsigned int);
 
 
 #endifi
