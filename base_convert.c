@@ -83,7 +83,8 @@ int display_octal(va_list list)
 }
 
 /**
- * display_hex - Prints a representation of a decimal number on base16 lowercase
+ * display_hex - Prints a representation of a decimal number
+ *on base16 lowercase
  * @list: List of the arguments passed to the function
  * Return: Number of characters printed
  */
@@ -129,7 +130,8 @@ int display_hex(va_list list)
 
 
 /**
- * display_heX - Prints a representation of a decimal number on base16 Uppercase
+ * display_heX - Prints a representation of a decimal number
+ * on base16 Uppercase
  * @list: List of the arguments passed to the function
  * Return: Number of characters printed
  */
