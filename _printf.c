@@ -16,8 +16,8 @@ int _printf(const char *format, ...)
 		{"d", display_integer},
 		{"i", display_integer},
 		{"b", display_binary},
-		{"r", display_reversed},
-		//{"R", rot13},
+		{"r", display_rev},
+		{"R", rot13},
 		{"u", display_integer},
 		{"o", display_octal},
 		{"x", display_hex},
@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(arg_list, format);
-	/*Calling parser function*/
+
 	print_chars = parser(format, f_list, arg_list);
 	va_end(arg_list);
 	return (print_chars);

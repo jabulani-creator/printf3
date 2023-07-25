@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * display_numbers - Main Entry.
+ * display_number - Main Entry.
  *
  * Description: prints a number send to this function
  *
@@ -10,7 +10,7 @@
  * Return: The number of arguments printed
  */
 
-int display_numbers(va_list args)
+int display_number(va_list args)
 {
 	int n;
 	int div;
